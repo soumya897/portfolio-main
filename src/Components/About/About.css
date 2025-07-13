@@ -1,0 +1,76 @@
+.about {
+  padding: 2rem;
+  color: #fff;
+  
+}
+
+.title-box {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.title-box h1 {
+  font-size: 2.5rem;
+  color: #fbbf24;
+}
+
+.about-sections {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.about-left img {
+  width: 300px;
+  height: auto;
+  border-radius: 20px;
+  box-shadow: 0 0 10px #fbbf24;
+}
+
+.about-right {
+  flex: 1;
+  max-width: 600px;
+}
+
+.about-cards {
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+}
+
+.card {
+  flex: 1;
+  background-color: #1a1a1a;
+  padding: 1rem;
+  border-radius: 10px;
+  text-align: center;
+  border: 1px solid #333;
+}
+
+.card h3 {
+  color: #fbbf24;
+  margin-bottom: 0.5rem;
+}
+
+.about-para p {
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+
+.talk-btn {
+  padding: 0.6rem 1.2rem;
+  border: none;
+  background-color: #fbbf24;
+  color: #000;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.talk-btn:hover {
+  background-color: #e0a800;
+}
