@@ -1,5 +1,6 @@
 import project2 from '../../assets/project2.png'
 import project4 from '../../assets/project4.png';
+import project3 from '../../assets/project3.jpg';
 
 const mywork_data = [
   {
@@ -17,19 +18,13 @@ const mywork_data = [
     github: 'https://github.com/soumya897/tmdb-movie-app'
   },
   {
-    w_img: 'https://cdn.slidesharecdn.com/ss_thumbnails/enhancing-college-communications-1220307394344959-8-thumbnail.jpg?width=640&height=640&fit=bounds',
-    title: 'College to College Communication',
-    desc: 'A platform for secure communication and collaboration between multiple colleges.',
-    visit: 'https://example.com/project3',
-    github: 'https://github.com/soumya897/College-to-College-Communication'
+    w_img: project3,
+    title: 'Royal PG Website',
+    desc: 'A dynamic, responsive Royal PG web app featuring tenant management, admin dashboard, and downloadable reports for seamless PG accommodation management.',
+    visit: 'https://royalpgkolkata.in/',
+    github: 'https://github.com/soumya897/pg-website-frontend'
   },
-  {
-    w_img: project4,
-    title: 'Number Guessing Game',
-    desc: 'A simple interactive game where users guess a randomly generated number.',
-    visit: 'https://soumya897.github.io/Number_-guessing-_game/',
-    github: 'https://github.com/soumya897/Number_-guessing-_game'
-  },
+  
   // add more...
 ];
 

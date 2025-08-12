@@ -9,12 +9,15 @@ const MyWork = () => {
     <div id='work' className='mywork'>
       <div className="title-box">
         <h1>My Latest Work</h1>
-
       </div>
 
       <div className="mywork-container">
         {mywork_data.map((work, index) => (
-          <div key={index} className="work-card" style={{ backgroundImage: `url(${work.w_img})` }}>
+          <div
+            key={index}
+            className="work-card"
+            style={{ backgroundImage: `url(${work.w_img})` }}
+          >
             <div className="overlay"></div>
             <div className="work-content">
               <h2>{work.title}</h2>
@@ -30,7 +33,9 @@ const MyWork = () => {
 
       <div
         className="mywork-showmore"
-        onClick={() => window.open("https://github.com/soumya897?tab=repositories", "_blank")}
+        onClick={() =>
+          window.open("https://github.com/soumya897?tab=repositories", "_blank")
+        }
       >
         <p>Show More</p>
         <img src={arrow_icon} alt="" />

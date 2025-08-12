@@ -1,5 +1,4 @@
 .mywork {
-  
   color: white;
   padding: 40px 20px;
   text-align: center;
@@ -27,7 +26,21 @@
   background-position: center;
   border-radius: 12px;
   overflow: hidden;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+  box-shadow: none !important; /* No shadow by default */
+  transition: box-shadow 0.3s ease;
+}
+
+.overlay {
+  display: none; /* Hide overlay by default */
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  transition: background-color 0.3s ease;
+}
+
+.work-card:hover .overlay{
+  /* box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4); Shadow only on hover */
+  display: block;
 }
 
 .overlay {

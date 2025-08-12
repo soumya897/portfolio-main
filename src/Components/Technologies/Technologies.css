@@ -1,19 +1,14 @@
 .technologies-section {
   padding: 2rem;
   color: #fff;
-
   text-align: center;
 }
 
 .technologies-section h2 {
-  font-size: 2.5rem;
-  color: #fbbf24;
-  margin-bottom: 0.3rem;
+  font-size: 3rem;
+  color: #ffc107; 
+  margin-bottom: 0.5rem;
 }
-#skills {
-  scroll-margin-top: 100px; /* Adjust if navbar is taller or shorter */
-}
-
 
 .subtitle {
   font-size: 1rem;
@@ -21,47 +16,32 @@
   margin-bottom: 2rem;
 }
 
-.tech-container {
-  display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
-  max-width: 700px;
+.tech-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  gap: 3rem;
+  max-width: 900px;
   margin: 0 auto;
 }
 
-.tech-bar {
-  text-align: left;
+.tech-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.tech-name {
-  display: block;
-  margin-bottom: 0.3rem;
+.icon-large {
+  font-size: 60px;
+  transition: transform 0.1s ease; /* Smooth animation */
+}
+
+.tech-item:hover .icon-large {
+  transform: scale(1.25); 
+}
+
+.tech-item p {
+  font-size: 0.9rem;
   font-weight: 500;
-}
-
-.bar {
-  width: 100%;
-  background-color: #222;
-  height: 10px;
-  border-radius: 5px;
-  overflow: hidden;
-}
-
-.bar-fill {
-  height: 100%;
-  background: linear-gradient(270deg, #DF8908 50%, #B415FF 100%);
-  border-radius: 5px;
-  transition: width 0.5s ease;
-}
-
-/* Responsive */
-@media (max-width: 600px) {
-  .technologies-section h2 {
-    font-size: 2rem;
-  }
-
-  .tech-container {
-    gap: 1rem;
-    padding: 0 1rem;
-  }
+  color: #fff;
+  margin-top: 0.5rem;
 }
