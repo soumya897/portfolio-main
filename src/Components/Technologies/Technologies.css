@@ -7,7 +7,7 @@
 .technologies-section h2 {
   font-size: 3rem;
   color: #ffc107; 
-  margin-bottom: 0.5rem;
+  margin-bottom: 3rem;
 }
 
 .subtitle {
@@ -32,7 +32,7 @@
 
 .icon-large {
   font-size: 60px;
-  transition: transform 0.1s ease; /* Smooth animation */
+  transition: transform 0.1s ease; 
 }
 
 .tech-item:hover .icon-large {
@@ -44,4 +44,9 @@
   font-weight: 500;
   color: #fff;
   margin-top: 0.5rem;
+}
+@media (max-width: 768px) {
+  .tech-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }

@@ -29,7 +29,7 @@ const Technologies = () => {
     <section id="skills" className="technologies-section">
       <h2>Technologies</h2>
 
-      <p className="subtitle">The Skills I Have</p>
+      {/* <p className="subtitle">The Skills I Have</p> */}
       
     
       <div className="tech-grid">
